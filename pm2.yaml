@@ -1,0 +1,8 @@
+apps:
+    - name: hass-sidecar
+      script: src/index.ts
+      exec_mode: fork
+      env:
+        NODE_ENV: local
+      interpreter: "./node_modules/.bin/ts-node"
+      interpreter_args: "-P ./tsconfig.json"
