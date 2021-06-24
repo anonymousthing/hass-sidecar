@@ -1,11 +1,11 @@
 import { Automation } from "../interfaces/Automation";
 
-module.exports = class HallwayLight extends Automation {
+module.exports = class TripodLight extends Automation {
     private litterBoxBoolean = 'input_boolean.litter_box';
-    private notificationLight = 'light.hallway_light';
+    private notificationLight = 'light.lan_room_tripod_lamp';
 
     constructor() {
-        super('Hallway Light');
+        super('Tripod Lamp');
 
         this.onStateChange(this.litterBoxBoolean, this.onInputChange);
     }
